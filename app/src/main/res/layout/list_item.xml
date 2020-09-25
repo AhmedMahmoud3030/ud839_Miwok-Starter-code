@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="2dp"
+        android:background="@color/tan_background"
+        android:id="@+id/image"/>
+    <LinearLayout
+        android:id="@+id/textContaner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/category_family"
+        android:padding="15dp">
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="9"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="0dp"
+               android:layout_gravity="bottom"
+               android:layout_weight="1"
+               android:text="hello"
+               android:textSize="18dp"
+                android:textStyle="bold"
+               android:id="@+id/firstWord"
+               android:textColor="@android:color/white"
+
+               />
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp"
+               android:background="@android:color/white"/>
+
+           <TextView
+               android:id="@+id/secondWord"
+               android:layout_width="wrap_content"
+               android:layout_height="0dp"
+               android:layout_gravity="top"
+               android:layout_weight="1"
+               android:text="hello"
+               android:textSize="18dp"
+               android:textColor="@android:color/white"/>
+       </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/baseline_play_arrow_white_24dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
